@@ -22,7 +22,7 @@ round_val = 2
 # USER INPUT
 def get_survey_file():
     #todo: catch a cancel or invalid survey file
-    survey_file = r"C:\Users\kbonnet\Desktop\Confidence Shot Tool\Testing\Survey Files\SubGrade 3_24_15"  #askopenfilename(title='Select Survey File')  # show an "Open" dialog box and return the path to the selected file
+    survey_file = askopenfilename(title='Select Survey File')  # show an "Open" dialog box and return the path to the selected file
     if survey_file == '': sys.exit()
     return survey_file
 
